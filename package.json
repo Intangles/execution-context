@@ -1,5 +1,5 @@
 {
-  "name": "execution-context-js",
+  "name": "@intangles-lab/execution-context-js",
   "version": "1.0.0",
   "description": "Easier way to add and access context to your nested javascript functions",
   "main": "index.js",
@@ -20,6 +20,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Intangles/execution-context.git"
-  }
+    "url": "git+https://github.com/Intangles/execution-context.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Intangles/execution-context/issues"
+  },
+  "homepage": "https://github.com/Intangles/execution-context#readme",
+  "directories": {
+    "example": "examples"
+  },
+  "devDependencies": {},
+  "author": "",
+  "private": false
 }

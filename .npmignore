@@ -1,0 +1,7 @@
+# npm ignore
+# https://docs.npmjs.com/misc/developers#keeping-files-out-of-your-package
+
+# This file is used to prevent certain files from being included when your package is published to npm.
+# It is not published to npm itself.
+
+examples/
