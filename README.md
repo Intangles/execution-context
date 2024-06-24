@@ -48,6 +48,8 @@ contextualFirstFunction(10)
 - `context` - Context value to be set
 - Sets the context value to be provided to the function
 
+## Caveats
+The context value is only available to the functions that are available in the same call stack as the function that is provided with the context value. Due to the nature of javascript, callbacks and promises will not have access to the context value. However, this works well with async/await functions. Only the async functions needs to be called using await so that it is in the same call stack as the function that is provided with the context value.
+
 ## License
 MIT
-```
