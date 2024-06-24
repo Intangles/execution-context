@@ -1,6 +1,6 @@
 {
   "name": "@intangles-lab/execution-context-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easier way to add and access context to your nested javascript functions",
   "main": "index.js",
   "scripts": {
