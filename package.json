@@ -15,8 +15,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "stacktrace-js": "^2.0.2",
-    "uuid": "^10.0.0"
+    "stacktrace-js": "2.0.2"
   },
   "repository": {
     "type": "git",
@@ -29,7 +28,6 @@
   "directories": {
     "example": "examples"
   },
-  "devDependencies": {},
   "author": "",
   "private": false
 }

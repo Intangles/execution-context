@@ -1,5 +1,5 @@
-const uuid = require("uuid");
 const StackTrace = require("stacktrace-js");
+const crypto = require("crypto");
 const globalExecutionContext = {};
 const KEY_PREFIX = "$$exec_context$$";
 
@@ -77,7 +77,7 @@ exports.provideExecutionContext = function provideExecutionContext(
     handler,
     contextValue
 ) {
-    const uniqueId = uuid.v4();
+    const uniqueId = "f-" + crypto.randomBytes(16).toString("hex") + "-" + Date.now();
     const that = this;
     const functionName = `Object.${KEY_PREFIX}${uniqueId}`;
     const contextProvider = {
