@@ -50,6 +50,21 @@ contextualFirstFunction(10)
 
 ## Caveats
 The context value is only available to the functions that are available in the same call stack as the function that is provided with the context value. Due to the nature of javascript, callbacks and promises will not have access to the context value. However, this works well with async/await functions. Only the async functions needs to be called using await so that it is in the same call stack as the function that is provided with the context value.
+If you want to use it in callbacks also then you’ll have to get context outside the callback and set it again inside the callback.
 
+```js
+const { 
+    getExecutionContext,
+    setExecutionContext
+} = require("@intangles-lab/execution-context-js");
+
+function callbackExample() {
+  const req = getExecutionContext();
+  setTimeout(() => {
+    setExecutionContext(req);
+    func();
+  }, 1000)
+}
+```
 ## License
 MIT
